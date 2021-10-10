@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { info } = require("./controller");
+const { info } = require('./controller');
 
 router.get('/', info);
 router.get('/:brand', info);

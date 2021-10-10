@@ -11,9 +11,33 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}",
+					"raw": "{{base_url}}/:brand/:model/:color/:size",
 					"host": [
 						"{{base_url}}"
+					],
+					"path": [
+						":brand",
+						":model",
+						":color",
+						":size"
+					],
+					"variable": [
+						{
+							"key": "brand",
+							"value": ""
+						},
+						{
+							"key": "model",
+							"value": null
+						},
+						{
+							"key": "color",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
 					]
 				},
 				"description": "All the path variables are options but follow order in which they are mentioned"

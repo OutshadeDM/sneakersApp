@@ -7,17 +7,17 @@ const { readFile } = require('fs/promises');
 */
 async function getData(filePath, format) {
 
-    try {
+  try {
 
-        let data = JSON.parse(await readFile(filePath, format));
-        return data;
+    let data = JSON.parse(await readFile(filePath, format));
+    return data;
 
-    } catch (error) {
-        throw new Error(error.message);
-    }
+  } catch (error) {
+    throw new Error(error.message);
+  }
 
 }
 
 module.exports = {
-    getData,
+  getData,
 }

@@ -34,8 +34,8 @@ const info = async (req, res) => {
       }
 
       if (modelData && modelData.length && modelData.includes(detail))
-        return res.status(200).send("Available");
-      return res.status(200).send("Not Available");
+        return res.status(200).send('Available');
+      return res.status(200).send('Not Available');
 
     }
     
@@ -45,8 +45,8 @@ const info = async (req, res) => {
       const colorData = data[brand][model][color];
 
       if (color && color.length && colorData.includes(size)) 
-        return res.status(200).send("Available");
-      return res.status(200).send("Not Available");
+        return res.status(200).send('Available');
+      return res.status(200).send('Not Available');
 
     }
 
@@ -80,7 +80,7 @@ const info = async (req, res) => {
   } catch (error) {
     // can be raplaced by sentry or any other logger method
     console.log(error);
-    return res.status(404).send("Not Available");
+    return res.status(404).send('Not Available');
   }
 }
 
